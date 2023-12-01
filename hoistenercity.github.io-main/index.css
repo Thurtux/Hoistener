@@ -1,0 +1,438 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    overflow-x: hidden;
+
+}
+
+header {
+    height: 95vh;
+    width: 100vw;
+    /**background-image: url(img/carrobg.jpg);*/
+    background-size: cover;
+}
+header .bg{
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+}
+
+button{
+    cursor: pointer;
+}
+
+.btn-fixed{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    border: solid 2px;
+    border-radius: 2px;
+    background-color: rgb(rgba(255, 0, 0, 0), green, blue);
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.btn-fixed.visible{
+    visibility: visible ;
+}
+
+#menu{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+nav {
+    background-color: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding: 0px 8px;
+}
+
+nav li img {
+    margin-top: 55%;
+    width: 200px;
+}
+
+
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
+.intro {
+    margin-top: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.intro img {
+    width: 20vw;
+    height: 10vh;
+}
+
+.intro-cars div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.intro-cars ul li {
+    margin-top: 50%;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+#fefa {
+    margin-right: auto;
+}
+
+/*GARAGEM*/
+a {
+    color: white;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    text-decoration:wavy;
+
+}
+
+
+
+.cards {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: black;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 400px;
+    color: white;
+}
+
+.cards .card:first-child {
+    margin-left: 0;
+}
+
+/*.cards .card .icon {
+    width: 64px;
+    height: 64px;
+}*/
+
+.cards .card img {
+    width: 64px;
+    height: 64px;
+}
+
+.cards .card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+}
+
+.cards .card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+.cards .card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 2px;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    margin-bottom: 16px 0;
+    background-color: black;
+}
+.cards .card button a{
+    color: red;
+    text-decoration: none;
+}
+
+.cards .card button:hover {
+    background-color: white;
+    transition-timing-function: ease-in;
+    transition: 0.7s;
+    box-shadow: rgb(255, 0, 0) 0px 0px 25px ;
+}
+
+/*PRIMES*/
+
+.cards-2 {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cards-2 .card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 500px;
+    margin-left: 200px;
+    color: black;
+    box-shadow: rgba(255, 255, 255, 0.514) 0px 5px 25px;
+}
+
+.cards-2 .card-2:first-child {
+    margin-left: 0;
+}
+
+.cards-2 .card-2 button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 16px 0;
+    background-color: red;
+}
+
+
+.cards-2 .card-2 img {
+    width: 130px;
+    height: 100px;
+}
+
+
+/*SOBRE NOS*/
+
+.sobres{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.sobres .a{
+    width: 30vw;
+    height: 60vh;
+    background: black;
+    color: white;
+}
+.sobres .a h2{
+    text-align: center;
+}
+.sobres .d{
+    width: 30vw;
+    height: 60vh;
+    background: white;
+}
+.sobres .d img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.sobres .c{
+    width: 30vw;
+    height: 60vh;
+    background: black;
+    color: white;
+}
+.sobres .c h2{
+    text-align: center;
+}
+
+/*FOOTER*/
+
+.footer{
+    margin-top: 10vh;
+    height: 40vh;
+    width: 100vw;
+}
+
+.footer hr{
+    height: 3px;
+    width: 100%;
+
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons img{
+    padding: 32px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    padding: 0px 8px;
+}
+
+.footer ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: red;
+    transition-timing-function: ease-in-out;
+    transition-duration: 200ms;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    nav ul {
+        visibility: visible;
+    }
+
+    nav li img {
+        visibility: visible;
+        width: 60px;
+        height: 50px;
+    }
+
+    .intro img {
+        display: block;
+        width: 50vw;
+        height: 80px;
+    }
+
+    header {
+        height: 90vh;
+    }
+
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards .card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .cards .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .cards .card button {
+        font-size: 70%;
+    }
+
+    .cards-2 {
+        flex-direction: column;
+    }
+
+    .cards-2 .card-2 {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .cards-2 .card-2:last-child {
+        margin-bottom: 0;
+    }
+
+    .cards-2 .card-2 button {
+        font-size: 70%;
+    }
+
+    .sobres{
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    .sobres .a{
+        margin-left: 0;
+        margin-top: 30vh;
+        width: 50vw;
+        height: 100vh;
+    }
+    .sobres .d{
+        margin-left: 0;
+        width: 50vw;
+        height: 200vh;
+    }
+    .sobres .c{
+        margin-left: 0;
+        margin-bottom: 50px;
+        width: 50vw;
+        height: 100vh;
+    }
+
+}
