@@ -26,14 +26,19 @@ header {
 
 .navbar li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 50px;
 }
+
 
 .navbar a {
     color: #fff;
     text-decoration: none;
+    transition: 1ms;
 }
-
+.navbar a:hover {
+    transition: 2s;
+    color: rgb(101, 4, 211);
+}
 
 
 .Ad1 {
@@ -46,6 +51,47 @@ header {
     height: auto; /*prop original*/
     margin: 0 auto;
 }
+
+.Ad2 {
+    display: flex;
+    padding: 200px;
+    justify-content: space-between;
+
+}
+
+.carrossel {
+    width: 120%; /* image size */
+    max-width: 100%; /* lag div */
+    height: auto; /*prop original*/
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+
+.slide {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.TextAd{
+    padding: 20px;
+    color: white;
+}
+
+
 
 
 
